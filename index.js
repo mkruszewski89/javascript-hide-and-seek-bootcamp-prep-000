@@ -13,3 +13,10 @@ function increaseRankBy(n) {
   }
   return lis
 }
+
+function deepestChild() {
+  //pull out the deepest child from div#grand-node (iterate over elements with queryselector)
+  const lis = document.getElementById('grand-node').getElementsByTagName('div')
+  i = lis.length - 1
+  return lis[i]
+}
